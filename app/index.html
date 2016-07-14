@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- ng-app is a directive used to flag the HTML element that angular should consider to be the root of the application" -->
+
+<html lang="en" ng-app="demoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <!-- <div ng-controller="DemoController1">
+      <h1>View and Template</h1>
+      <p>In Angular, the view is a projection of the model through the HTML template. This means that whenever the model changes, Angular refreshes the appropriate binding points, which updates the view.</p>
+      <p>Controllers are classes containing the logic behind the application to decorate the scope with functions and values. Each controller is in charge of its DOM sub-tree.</p>
+      <p>Scopes are basically the glue between the controller and the view. They are arranged in a hierarchical structure that mimics the DOM structure of the app.</p>
+      <p>A binding is denoted by double-curlies. Simple operators like '+' can be used to make an expression to be used by the binding.</p>
+      <div>Template text: {{template_text + ' ' + template_fn()}}</div>
+    </div> -->
+
+    <!-- <div ng-controller="DemoController2">
+      <h1>ngRepeat directive</h1>
+      <p>The ng-repeat directive tells Angular to create a <b>li</b> element for each item in the list.</p>
+      <p>In Angular, directives are markers on DOM elements telling AngularJS to attach specific behavior to the DOM elements</p>
+      <p>Developers are able to create their own custom directives and register them with the angular app</p>
+      <li ng-repeat="t in template_list">
+        <div>Template text: {{t}}</div>
+      </li>
+    </div> -->
+
+    <!-- <div ng-controller="DemoController3">
+      <h1>Two-way Data Binding</h1>
+      <p> The ng-model directive binds a input,select,textarea form to a property on the scope. <p>
+      Name: <input ng-model="name"></input>
+      <h2>Hello {{name}}</h2>
+    </div> -->
+
+    <!-- <div ng-controller="DemoController4">
+      <h1>Custom services</h1>
+      <p>$http makes an HTTP GET request to our web server asking for data.json. The server provides the data in the JSON file.</p>
+      <p>$http service returns a promise object which allows fn's to run asynchronously</p>
+      <button ng-click="getData()">Click to get data from server</button>
+      <li ng-repeat="t in data">
+        <div>Data: {{t}}</div>
+      </li>
+    </div> -->
+
+    <h1>Routing</h1>
+    <p>$route is used for deep-linking URLs to controllers and views (HTML partials). It watches $location.url() and tries to map the path to an existing route definition.</p>
+    <a href="#/demo"> Demo link</a>
+    <a href="#/demo/abc"> Demo link w/ txt </a>
+    <div ng-view> Loading... </div>
+  </body>
+
+</html>
